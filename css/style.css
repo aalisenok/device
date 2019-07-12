@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold.woff') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight.woff') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #fff;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #f7e296;
+    margin-top: 40px;
+}
+
+.user-list,
+.service-list{
+    display: flex;
+}
+.user-list__item,
+.service-list__item {
+    list-style: none;
+}

@@ -5,10 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Device</title>
 </head>
 <body>
+<header class="header container">
+    <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+    <span class="header__logo">DEVICE</span>
+    <nav class="navigation">
+        <ul class="navigation__user user-list">
+            <li class="user-list__item">
+                <form action="" class="user-list--search">
+                    <input type="text">
+                    <button type="submit">Найти</button>
+                </form>
+            </li>
+            <li class="user-list__item user-list__item--login"><a href="" class="-user-list__link">Войти</a></li>
+            <li class="user-list__item user-list__item--compare"><a href="" class="-user-list__link">Сравнить</a></li>
+            <li class="user-list__item user-list__item--cart"><a href="" class="-user-list__link">Корзина</a></li>
+        </ul>
+        <ul class="navigation__service service-list">
+            <li class="service-list__item service-list__item--catalog"><a href="" class="service-list__link">Каталог товаров</a></li>
+            <li class="service-list__item service-list__item--delivery"><a href="" class="service-list__link">Доставка</a></li>
+            <li class="service-list__item service-list__item--warranty"><a href="" class="service-list__link">Гарантия</a></li>
+            <li class="service-list__item service-list__item--contacts"><a href="" class="service-list__link">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
 
 </body>
 </html>
