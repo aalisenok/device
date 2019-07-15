@@ -12,27 +12,31 @@
 <body>
 <header class="header container">
     <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-    <span class="header__logo">DEVICE</span>
+    <a href="index.html" class="header__logo logo">device</a>
     <nav class="navigation">
         <ul class="navigation__user user-list">
-            <li class="user-list__item">
-                <form action="" class="user-list--search">
-                    <input type="text">
-                    <button type="submit">Найти</button>
+            <li class="user-list__item user-list__item--search">
+                <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <input class="form-search__input" type="text" id="search" name="search" placeholder="Поиск по сайту">
+                    <button class="form-search__btn" type="submit">Найти</button>
                 </form>
             </li>
-            <li class="user-list__item user-list__item--login"><a href="" class="-user-list__link">Войти</a></li>
-            <li class="user-list__item user-list__item--compare"><a href="" class="-user-list__link">Сравнить</a></li>
-            <li class="user-list__item user-list__item--cart"><a href="" class="-user-list__link">Корзина</a></li>
+            <li class="user-list__item user-list__item--login"><a href="" class="user-list__link">Войти</a></li>
+            <li class="user-list__item user-list__item--compare"><a href="" class="user-list__link">Сравнить</a></li>
+            <li class="user-list__item user-list__item--cart"><a href="" class="user-list__link">Корзина</a></li>
         </ul>
         <ul class="navigation__service service-list">
-            <li class="service-list__item service-list__item--catalog"><a href="" class="service-list__link">Каталог товаров</a></li>
-            <li class="service-list__item service-list__item--delivery"><a href="" class="service-list__link">Доставка</a></li>
-            <li class="service-list__item service-list__item--warranty"><a href="" class="service-list__link">Гарантия</a></li>
-            <li class="service-list__item service-list__item--contacts"><a href="" class="service-list__link">Контакты</a></li>
+            <li class="service-list__item service-list__item--catalog"><a href="" class="service-list__link">Каталог
+                товаров</a></li>
+            <li class="service-list__item service-list__item--delivery"><a href=""
+                                                                           class="service-list__link">Доставка</a></li>
+            <li class="service-list__item service-list__item--warranty"><a href=""
+                                                                           class="service-list__link">Гарантия</a></li>
+            <li class="service-list__item service-list__item--contacts"><a href=""
+                                                                           class="service-list__link">Контакты</a></li>
         </ul>
     </nav>
 </header>
-
 </body>
 </html>

@@ -1,34 +1,10 @@
-@font-face {
-    font-family: 'opensans';
-    src: url('../fonts/opensans.woff2') format('woff2'),
-    url('../fonts/opensans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'opensans';
-    src: url('../fonts/opensanslight.woff2') format('woff2'),
-    url('../fonts/opensanslight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold.woff') format('woff2'),
-    url('../fonts/gilroyextrabold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'gilroylight';
-    src: url('../fonts/gilroylight.woff') format('woff2'),
-    url('../fonts/gilroylight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "fonts.css";
 
 body {
     background: #fff;
+    font-size: 15px;
+    font-family: "opensans", sans-serif;
+
 }
 .visually-hidden {
     position: absolute;
@@ -50,13 +26,76 @@ body {
 .header {
     background: #f7e296;
     margin-top: 40px;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.header__logo {
+    position: absolute;
+    left: 60px;
+    top: -24px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Gilroy", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.26px;
+}
+.navigation {
+}
+.user-list,
+.service-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.user-list,
-.service-list{
-    display: flex;
-}
 .user-list__item,
 .service-list__item {
-    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.user-list__item--search,
+.service-list__item--catalog {
+    margin-right: auto;
+}
+
+
+
+
+
+
+.user-list__item--search::before {
+    content: '';
+    display: block;
+    background: url("../img/search-black.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.user-list__item--login::before {
+    content: '';
+    display: block;
+    background: url("../img/user-black.png") no-repeat center;
+    width: 13px;
+    height: 12px;
+}
+
+.user-list__item--compare::before {
+    content: '';
+    display: block;
+    background: url("../img/compare-black.png") no-repeat center;
+    width: 10px;
+    height: 10px;
+}
+
+.user-list__item--cart::before {
+    content: '';
+    display: block;
+    background: url("../img/cart-black.png") no-repeat center;
+    width: 12px;
+    height: 12px;
 }
