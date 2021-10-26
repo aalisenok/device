@@ -910,7 +910,7 @@ img {
 .form__control:nth-child(5) {
   margin-bottom: 40px;
 }
-.form__control:invalid {
+.form__control.hasError {
   border-color: var(--red);
 }
 .form__control input {
@@ -928,8 +928,8 @@ img {
 }
 .form__control input:focus + label,
 .form__control input.filled + label {
-  -webkit-transform: translateY(-2rem);
-          transform: translateY(-2rem);
+  -webkit-transform: translateY(-2.5rem);
+          transform: translateY(-2.5rem);
   font-size: 1.2rem;
 }
 .form__control label {

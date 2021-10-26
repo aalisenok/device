@@ -107,8 +107,8 @@ function checkInputs() {
 }
 
 function setErrorFor(input) {
-    const formControl = input.parentElement;
-    formControl.classList.toggle('hasError');
+    const formControls = input.parentElement;
+    formControls.classList.toggle('hasError');
 }
 
 function clearInputs() {
@@ -123,7 +123,8 @@ function clearInputs() {
 function isValid(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
 const inputs = document.querySelectorAll('input')
 inputs.forEach(item => {
-    item.addEventListener('keyup', () => item.value.length > 0 ? item.classList.add('filled') : clearInputs())
+    item.addEventListener('keyup', () => item.value.length > 0 ? item.classList.add('filled') : item.classList.remove('filled'))
 })
