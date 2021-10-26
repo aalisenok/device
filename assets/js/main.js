@@ -49,9 +49,9 @@ const formControls = document.querySelectorAll('.form__control');
 let hasError;
 
 form.addEventListener('submit', e => {
-    e.preventDefault()
-    checkInputs()
-})
+    e.preventDefault();
+    checkInputs();
+});
 
 plansSelector.addEventListener('click', () => {
     plansSelector.classList.toggle('isOpen')
