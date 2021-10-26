@@ -36,7 +36,6 @@ const updateCountdown = () => {
 let countdownInterval = setInterval(updateCountdown, 1000)
 updateCountdown();
 
-
 const plansSelector = document.getElementById('plansSelector');
 const plansMenu = document.getElementById('plansMenu');
 const plansItems = document.querySelectorAll('.plans__item');
@@ -47,7 +46,6 @@ const email = document.getElementById('email');
 const company = document.getElementById('company');
 const phone = document.getElementById('phone');
 const formControls = document.querySelectorAll('.form__control');
-const input = document.getElementsByTagName('input');
 let hasError;
 
 form.addEventListener('submit', e => {

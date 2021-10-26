@@ -29,19 +29,23 @@ body
   background var(--light)
   color var(--light-gray)
   min-height 100%
+
 img
   max-width 100%
   display block
+
 .wrap
   z-index 0
   position relative
   overflow hidden
   background linear-gradient(to bottom, transparent 70%, var(--dark-gray) 30%);
+
 .container
   max-width 1130px
   padding-left 15px
   padding-right 15px
   margin 0 auto
+
 .top-shape
   position absolute
   top: -170px
@@ -61,6 +65,9 @@ img
     left: auto
     top: -165px
     right: -290px
+    &--sing-up
+      display: none;
+
 .bottom-shape
   position absolute
   background url("../img/bg-pattern-footer.svg") no-repeat
@@ -74,23 +81,35 @@ img
   margin: 0 auto
   z-index -1
   animation spin 10s infinite linear
+
+  &--sing-up
+    bottom -475px
   @media (min-width 768px)
     width: 1454px
     height 1454px
     left: -340px
     right: -340px
     bottom -480px
+    &--sing-up
+      bottom -540px
   @media (min-width 1200px)
     width: 2036px
     height 2036px
     left: -700px
     right: auto
     bottom -820px
+    &--sing-up
+      top: -750px
+      right: -850px
+      left auto
+      bottom auto
+
 @keyframes spin
   from
     transform rotate(0)
   to
     transform rotate(360deg)
+
 .btn
   color var(--white)
   background var(--blue)
@@ -103,29 +122,44 @@ img
   outline none
   transition 0.5s ease-in-out
   cursor pointer
+
   &:hover
     background var(--violet)
+
   &--shadow
     box-shadow 0 25px 25px -10px rgba(63, 91, 194, 0.25)
+
   &--light
     background var(--light-violet)
     color var(--blue)
+
     &:hover
       background var(--light-violet-hover)
+
   &--white
     background var(--white)
     color var(--blue)
+
     &:hover
       background var(--white)
       color var(--violet)
+
 .header
   padding 45px 0 40px 0
   display flex
   align-items center
   justify-content center
+  &--sign-up
+    padding 45px 0 80px 0
   @media (min-width 768px)
     padding 70px 0 50px 0
     justify-content start
+    &--sign-up
+      padding 45px 0 100px 0
+  @media (min-width 1200px)
+    padding 80px 0 50px 0
+    &--sign-up
+      padding 80px 0 120px 0
 .hero
   display flex
   flex-direction column
@@ -136,6 +170,7 @@ img
     padding 50px 0 70px 0
   @media (min-width 992px)
     padding 80px 0 90px 0
+
   &__charts
     margin-bottom 60px
     max-width 170px
@@ -146,6 +181,7 @@ img
       margin-left auto
     @media (min-width 992px)
       max-width 475px
+
   &__info
     display flex
     align-items center
@@ -156,6 +192,7 @@ img
       max-width 345px
     @media (min-width 992px)
       max-width 540px
+
   &__title
     font-size 4rem
     line-height 4.8rem
@@ -168,6 +205,7 @@ img
     @media (min-width 992px)
       font-size 5.6rem
       line-height 6.4rem
+
   &__text
     text-align center
     margin-bottom 20px
@@ -176,6 +214,7 @@ img
     @media (min-width 992px)
       font-size 1.8rem
       line-height 2.8rem
+
 .cards
   display flex
   flex-direction column
@@ -188,6 +227,7 @@ img
     padding: 90px 0 40px 0
     flex-direction row
     justify-content space-between
+
 .card
   padding 40px 55px
   background var(--white)
@@ -195,6 +235,7 @@ img
   border-radius 13px
   z-index 1
   overflow hidden
+
   &:not(:last-child)
     margin-bottom 30px
     @media (min-width 1200px)
@@ -208,6 +249,7 @@ img
     flex 1 0 auto
     display: block;
     padding 40px 65px
+
   &__header
     display flex
     flex-direction column
@@ -223,6 +265,7 @@ img
       align-items center
       margin-bottom 50px
       margin-right: 0
+
   &__body
     display flex
     flex-direction column
@@ -241,6 +284,7 @@ img
       justify-content center
       margin-bottom: 30px
       margin-top: 0
+
   &__footer
     display flex
     justify-content center
@@ -250,6 +294,7 @@ img
       justify-content start
     @media (min-width 1200px)
       justify-content center
+
   &__rate
     color var(--gray)
     font-size 2rem
@@ -260,6 +305,7 @@ img
       margin-bottom 15px
     @media (min-width 1200px)
       margin-bottom 40px
+
   &__price
     font-size 5.6rem
     line-height 6.4rem
@@ -270,12 +316,14 @@ img
       margin-bottom 20px
     @media (min-width 1200px)
       margin-bottom 10px
+
   &__condition
     line-height 2.8rem
     color var(--gray)
 
   &__text:not(last-child)
     margin-bottom 15px
+
   &__shape
     position absolute
     top: -380px
@@ -295,19 +343,24 @@ img
       top: -380px
       bottom: auto
       right: -265px
+
     svg
       width: 880px
       height: 880px
+
   &__rate--white,
   &__price--white,
   &__condition--white
     color var(--white)
+
   &__text--light
     color var(--white)
     opacity 0.75
+
   &--blue
     background var(--blue)
     position relative
+
 .cta
   padding: 50px 0 100px 0
   text-align center
@@ -318,11 +371,13 @@ img
     grid-template-rows repeat(2, auto)
   @media (min-width 1200px)
     padding: 40px 0 90px 0
+
   &__btn
     @media (min-width 992px)
       grid-area btn
       align-self start
       margin-left auto
+
   &__title
     margin 0 0 20px 0
     color var(--white)
@@ -330,13 +385,16 @@ img
     line-height 4.8rem
     letter-spacing 0.5rem
     font-weight 700
+
     &--dark
       color var(--gray)
     @media (min-width 992px)
       grid-area title
       text-align left
+
   &__date
     color var(--blue)
+
 .countdown
   display: flex
   justify-content space-between
@@ -348,28 +406,33 @@ img
   @media (min-width 992px)
     grid-area countdown
     margin: 0
+
   &__item
     padding: 10px 18px
     background var(--gray)
     border-radius 4px
     max-width: 72px;
     width: 100%;
+
     &--light
       background var(--light-blue)
     @media (min-width 576px)
       max-width: 100px;
       border-radius 13px
       padding: 26px 18px
+
   &__title
     display block
     font-size 3.2rem
     line-height 4.8rem
     font-weight 700
     color var(--white)
+
     &--blue
       color var(--blue)
     @media (min-width 576px)
       font-size 5.6rem
+
   &__subtitle
     display block
     font-size 1.2rem
@@ -377,26 +440,28 @@ img
     font-weight 700
     color var(--white)
     opacity 0.5
+
     &--gray
       color var(--gray)
     @media (min-width 576px)
       font-size 1.6rem
+
 .sign-up
   position relative
-  padding 45px 0 90px 0
   overflow hidden
-  @media (min-width 768px)
-    padding 70px 0 120px 0
-  @media (min-width 992px)
-    padding 80px 0
+  background linear-gradient(to bottom, transparent 75%, var(--dark-gray) 25%);
+  z-index 0
   @media (min-width 1200px)
+    background linear-gradient(to right, transparent 70%, var(--dark-gray) 30%);
     height 100vh
+
   &__content
     @media (min-width 1200px)
       display grid
       grid-template-areas "header ." "info form" "cta form"
       grid-template-columns repeat(2, 1fr)
       grid-template-rows repeat(3, auto)
+
   &__info
     display flex
     align-items center
@@ -411,6 +476,7 @@ img
       max-width 540px
     @media (min-width 1200px)
       grid-area info
+
   &__title
     font-size 4rem
     line-height 4.8rem
@@ -423,6 +489,7 @@ img
       line-height 6.4rem
     @media (min-width 1200px)
       text-align left
+
   &__text
     text-align center
     @media (min-width 992px)
@@ -430,6 +497,7 @@ img
       line-height 2.8rem
     @media (min-width 1200px)
       text-align left
+
   &__shape
     position absolute
     left -40px
@@ -438,17 +506,20 @@ img
     display flex
     justify-content center
     z-index -1
+
     svg
       width 458px
       height 458px
       animation spin 10s infinite linear
     @media (min-width 768px)
       display none
+
   &__cta
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 0
     margin-bottom: 60px
     @media (min-width 768px)
       margin-bottom: 100px
@@ -463,28 +534,34 @@ img
   border-radius 13px
   box-shadow 0 50px 50px -25px rgba(75, 92, 154, 0.25)
   max-width 330px
-  margin: 0 auto
+  margin: 0 auto 90px
   width 100%
   @media (min-width 576px)
+    margin: 0 auto 125px
     max-width 450px
     padding: 40px 40px 50px 40px
   @media (min-width 1200px)
     grid-area form
-    margin-right 0
+    margin: 0 0 0 auto
+
   &__btn
     width: 100%
     font-size inherit
     font-family inherit
     line-height inherit
+
   &__control
     position relative
     padding: 16px 20px
     border-bottom 1px solid var(--form-gray)
     margin-bottom 10px
+
     &:nth-child(5)
       margin-bottom: 40px
+
     &:invalid
       border-color var(--red)
+
     input
       border none
       outline none
@@ -494,13 +571,16 @@ img
       line-height inherit
       font-family inherit
       color var(--gray)
+
       &:invalid
         color var(--red)
+
       &:focus
       &.filled
         + label
           transform translateY(-2rem)
           font-size: 1.2rem
+
     label
       color var(--form-gray)
       font-size inherit
@@ -509,18 +589,20 @@ img
       left 20px
       position absolute
       transition 0.2s ease-in-out
+
     &.hasError::after
-        content ''
-        position absolute
-        right 16px
-        top: 19px
-        background-image url('../img/icon-cross.svg')
-        background-repeat no-repeat
-        width 20px
-        height: 20px
+      content ''
+      position absolute
+      right 16px
+      top: 19px
+      background-image url('../img/icon-cross.svg')
+      background-repeat no-repeat
+      width 20px
+      height: 20px
 
 .plans
   position relative
+
   &__menu
     display none
     position: absolute;
@@ -532,12 +614,15 @@ img
     border 1px solid var(--form-light-gray)
     background var(--white)
     box-shadow: 0 50px 50px -25px rgba(75, 92, 154, 0.25)
+
   &__item
     padding 16px 0
     cursor pointer
     position relative
+
     &:not(:last-child)
       border-bottom: 1px solid var(--form-light-gray);
+
     &.selected::after
       content ''
       position absolute
@@ -547,6 +632,7 @@ img
       background-repeat no-repeat
       width 15px
       height: 12px
+
   &__selector
     display flex
     align-items center
@@ -555,8 +641,10 @@ img
     outline none
     width: 100%
     cursor pointer
+
     &.isOpen .plans__arrow
       transform rotate(180deg)
+
   &__title
     color var(--gray)
     font-size 1.6rem
@@ -564,6 +652,7 @@ img
     line-height 2.8rem
     font-weight 700
     margin-right 10px
+
   &__subtitle
     opacity 0.4
     color var(--gray)
@@ -571,12 +660,15 @@ img
     font-family 'Kumbh Sans', sans-serif
     line-height 2.8rem
     font-weight 700
+
   &__arrow
     transition 0.2s ease-in-out
     margin-left auto
+
     svg
       width: 13px
       height 8px
+
 .show-plans
   z-index 1
   display block
