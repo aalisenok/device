@@ -480,6 +480,22 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 768px) {
+  .card__shape {
+    left: -320px;
+    top: -280px;
+    bottom: -280px;
+    right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .card__shape {
+    left: -265px;
+    top: -380px;
+    bottom: auto;
+    right: -265px;
+  }
+}
 .card__shape svg {
   width: 880px;
   height: 880px;
