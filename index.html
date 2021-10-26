@@ -5,46 +5,113 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Device</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon.png">
+    <title>Officelite coming soon site</title>
+    <link rel="icon" href="assets/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<div class="container">
-    <header class="header">
-        <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-        <a href="index.html" class="header__logo logo">device</a>
-        <nav class="navigation">
-            <ul class="navigation__user user-list">
-                <li class="user-list__item user-list__item--search">
-                    <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-                        <label class="form-search__label" for="search">
-                            <span class="visually-hidden">Поиск:</span></label>
-                        <input class="form-search__input" type="text" id="search" name="search"
-                               placeholder="Поиск по сайту">
-                        <button class="form-search__btn" type="submit">Найти</button>
-                    </form>
+<div class="wrap">
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="header__logo">
+                <img src="assets/img/logo.svg" alt="Logo">
+            </a>
+        </header>
+        <div class="hero">
+            <div class="hero__charts">
+                <img src="assets/img/illustration-charts.svg" alt="Charts">
+            </div>
+            <div class="hero__info">
+                <h1 class="hero__title">A simple solution to complex tasks is coming soon</h1>
+                <p class="hero__text">Say goodbye to inefficient juggling of multiple apps, teams, and projects.
+                    Officelite is the new
+                    collaboration platform built with an intuitive interface to improve productivity.</p>
+                <a class="btn btn--shadow hero__btn" href="sing-up.html">Get Started</a>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card__header">
+                    <span class="card__rate">Basic</span>
+                    <span class="card__price">Free</span>
+                    <span class="card__condition">Up to 5 users fo free</span>
+                </div>
+                <div class="card__body">
+                    <span class="card__text">Basic document collaboration</span>
+                    <span class="card__text">2 GB storage</span>
+                    <span class="card__text">Great security and support</span>
+                </div>
+                <div class="card__footer">
+                    <a class="btn btn--light" href="#">Try for Free</a>
+                </div>
+            </div>
+            <div class="card card--blue">
+                <div class="card__header">
+                    <span class="card__rate card__rate--white">Pro</span>
+                    <span class="card__price card__price--white">$9.99</span>
+                    <span class="card__condition card__condition--white">Per user, billed monthly</span>
+                </div>
+                <div class="card__body">
+                    <span class="card__text card__text--light">All essential integrations</span>
+                    <span class="card__text card__text--light">50 GB storage</span>
+                    <span class="card__text card__text--light">More control and insights</span>
+                </div>
+                <div class="card__footer">
+                    <a class="btn btn--white" href="#">Try for Free</a>
+                </div>
+                <div class="card__shape">
+                    <img src="assets/img/bg-pattern-pricing.svg" alt="Shape">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <span class="card__rate">Ultimate</span>
+                    <span class="card__price">$19.99</span>
+                    <span class="card__condition">Per user, billed monthly</span>
+                </div>
+                <div class="card__body">
+                    <span class="card__text">Robust work management</span>
+                    <span class="card__text">100 GB storage</span>
+                    <span class="card__text">VIP support</span>
+                </div>
+                <div class="card__footer">
+                    <a class="btn btn--light" href="#">Try for Free</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta">
+            <h2 class="cta__title">Coming <span class="cta__date" id="dueDate">4 NOV 2020</span></h2>
+            <ul class="countdown">
+                <li class="countdown__item">
+                    <span class="countdown__title" id="days">47</span>
+                    <span class="countdown__subtitle">days</span>
                 </li>
-                <li class="user-list__item user-list__item--login"><a href="" class="user-list__link">Войти</a></li>
-                <li class="user-list__item user-list__item--compare"><a href="" class="user-list__link">Сравнить</a>
+                <li class="countdown__item">
+                    <span class="countdown__title" id="hours">56</span>
+                    <span class="countdown__subtitle">hours</span>
                 </li>
-                <li class="user-list__item user-list__item--cart"><a href="" class="user-list__link">Корзина</a></li>
+                <li class="countdown__item">
+                    <span class="countdown__title" id="min">21</span>
+                    <span class="countdown__subtitle">min</span>
+                </li>
+                <li class="countdown__item">
+                    <span class="countdown__title" id="sec">20</span>
+                    <span class="countdown__subtitle">sec</span>
+                </li>
             </ul>
-            <ul class="navigation__service service-list">
-                <li class="service-list__item service-list__item--catalog"><a href="" class="service-list__link">Каталог
-                    товаров</a></li>
-                <li class="service-list__item service-list__item--delivery"><a href=""
-                                                                               class="service-list__link">Доставка</a>
-                </li>
-                <li class="service-list__item service-list__item--warranty"><a href=""
-                                                                               class="service-list__link">Гарантия</a>
-                </li>
-                <li class="service-list__item service-list__item--contacts"><a href=""
-                                                                               class="service-list__link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <a href="#" class="btn cta__btn">Get Started</a>
+        </div>
+
+        <div class="top-shape">
+        </div>
+        <div class="bottom-shape">
+        </div>
+    </div>
 </div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
