@@ -63,10 +63,10 @@ img
     right: -290px
 .bottom-shape
   position absolute
-  bottom -110px
   background url("../img/bg-pattern-footer.svg") no-repeat
   background-position center
   background-size cover
+  bottom -110px
   left: -410px
   right: -410px
   width: 1200px
@@ -75,11 +75,17 @@ img
   z-index -1
   animation spin 10s infinite linear
   @media (min-width 768px)
-    //width: 666px
-    //height 666px
-    //left: auto
-    //top: -165px
-    //right: -290px
+    width: 1454px
+    height 1454px
+    left: -340px
+    right: -340px
+    bottom -480px
+  @media (min-width 1200px)
+    width: 2036px
+    height 2036px
+    left: -700px
+    right: auto
+    bottom -820px
 @keyframes spin
   from
     transform rotate(0)
@@ -275,6 +281,7 @@ img
     top: -380px
     left: -275px
     right: -275px
+    bottom 0
     z-index -1
     display: flex;
     justify-content: center;
@@ -302,14 +309,15 @@ img
     background var(--blue)
     position relative
 .cta
-  padding: 50px 0
+  padding: 50px 0 100px 0
   text-align center
   @media (min-width 992px)
-    padding: 40px 0
     display grid
     grid-template-areas "title ." "countdown btn"
     grid-template-columns repeat(2, 1fr)
     grid-template-rows repeat(2, auto)
+  @media (min-width 1200px)
+    padding: 40px 0 90px 0
   &__btn
     @media (min-width 992px)
       grid-area btn
@@ -436,40 +444,6 @@ img
       animation spin 10s infinite linear
     @media (min-width 768px)
       display none
-  &__shape-footer
-    position absolute
-    height 320px
-    width: 100%
-    right: 0
-    bottom: 0
-    background var(--dark-gray)
-    z-index -1
-    @media (min-width 768px)
-      height 380px
-    @media (min-width 1200px)
-      height 100%
-      width: 30%
-    svg
-      width: 1200px;
-      height: 1200px;
-      position: absolute;
-      left: -1200px;
-      right: -1200px;
-      top: -410px;
-      margin: 0 auto
-      animation spin 10s infinite linear
-      @media (min-width 768px)
-        width: 1454px;
-        height: 1454px;
-        left: -1454px;
-        right: -1454px;
-        top: -540px;
-      @media (min-width 1200px)
-        width: 2036px;
-        height: 2036px;
-        top: -780px;
-        left: -760px;
-        margin: initial;
   &__cta
     display: flex;
     justify-content: center;

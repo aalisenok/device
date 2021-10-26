@@ -74,10 +74,10 @@ img {
 }
 .bottom-shape {
   position: absolute;
-  bottom: -110px;
   background: url("../img/bg-pattern-footer.svg") no-repeat;
   background-position: center;
   background-size: cover;
+  bottom: -110px;
   left: -410px;
   right: -410px;
   width: 1200px;
@@ -86,6 +86,24 @@ img {
   z-index: -1;
   -webkit-animation: spin 10s infinite linear;
           animation: spin 10s infinite linear;
+}
+@media (min-width: 768px) {
+  .bottom-shape {
+    width: 1454px;
+    height: 1454px;
+    left: -340px;
+    right: -340px;
+    bottom: -480px;
+  }
+}
+@media (min-width: 1200px) {
+  .bottom-shape {
+    width: 2036px;
+    height: 2036px;
+    left: -700px;
+    right: auto;
+    bottom: -820px;
+  }
 }
 .btn {
   color: var(--white);
@@ -472,6 +490,7 @@ img {
   top: -380px;
   left: -275px;
   right: -275px;
+  bottom: 0;
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,12 +533,11 @@ img {
   position: relative;
 }
 .cta {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
   text-align: center;
 }
 @media (min-width: 992px) {
   .cta {
-    padding: 40px 0;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "title ." "countdown btn";
@@ -527,6 +545,11 @@ img {
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[2];
     grid-template-rows: repeat(2, auto);
+  }
+}
+@media (min-width: 1200px) {
+  .cta {
+    padding: 40px 0 90px 0;
   }
 }
 @media (min-width: 992px) {
@@ -764,55 +787,6 @@ img {
 @media (min-width: 768px) {
   .sign-up__shape {
     display: none;
-  }
-}
-.sign-up__shape-footer {
-  position: absolute;
-  height: 320px;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  background: var(--dark-gray);
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .sign-up__shape-footer {
-    height: 380px;
-  }
-}
-@media (min-width: 1200px) {
-  .sign-up__shape-footer {
-    height: 100%;
-    width: 30%;
-  }
-}
-.sign-up__shape-footer svg {
-  width: 1200px;
-  height: 1200px;
-  position: absolute;
-  left: -1200px;
-  right: -1200px;
-  top: -410px;
-  margin: 0 auto;
-  -webkit-animation: spin 10s infinite linear;
-          animation: spin 10s infinite linear;
-}
-@media (min-width: 768px) {
-  .sign-up__shape-footer svg {
-    width: 1454px;
-    height: 1454px;
-    left: -1454px;
-    right: -1454px;
-    top: -540px;
-  }
-}
-@media (min-width: 1200px) {
-  .sign-up__shape-footer svg {
-    width: 2036px;
-    height: 2036px;
-    top: -780px;
-    left: -760px;
-    margin: initial;
   }
 }
 .sign-up__cta {
